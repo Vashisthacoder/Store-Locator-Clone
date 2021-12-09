@@ -1,17 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+var map;
+var markers = [];
+var infoWindow;
+var locationSelect;
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+
+
+
+function initMap() {
+  var  losAngeles = { lat: -34.063380, lng:-118.358080 };
+  map = new googlegit remote add origin.maps.Map(document.getElementById('map'), {
+      center: losAngeles,
+      zoom: 11,
+      mapTypeId: 'roadmap',
+ 
+  });
+  
+};
